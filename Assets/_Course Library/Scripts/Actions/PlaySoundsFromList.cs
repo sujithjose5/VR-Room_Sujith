@@ -68,6 +68,7 @@ public class PlaySoundsFromList : MonoBehaviour
 
     private void OnValidate()
     {
+        Debug.Log("Validated");
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.loop = shouldLoop;
     }
